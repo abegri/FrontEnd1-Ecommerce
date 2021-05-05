@@ -1,0 +1,148 @@
+@import url('estilos.css');
+@import url('header.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+
+.forms-h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight:bold;
+    color: #333333;
+    text-align:left;
+    padding-bottom: 40px;
+    padding-left: 45px;
+}
+
+form{
+    width: 750px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=reset], 
+input[type=submit],
+select,
+option,
+textarea,
+.forms p a {
+    font-family: 'Karla', sans-serif;
+}
+
+
+input::placeholder {
+    color: #000000;
+}
+
+
+.forms-section{
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    padding-left: 120px;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea{
+    width: 90%;
+    height: 60px;
+    margin: 10px 0px 20px 50px;
+    font-size: 20px;
+    padding: 15px 10px;
+    border: 1.53px solid #000;
+}
+
+textarea {
+    font-size: 27px;
+    width: 90%;
+    height: 250px;
+    font-size: 16px;
+    resize: none;
+}
+
+.buttons{
+    position: relative;
+    margin: 70px 0px 20px 0;
+    align-items: center;
+}
+
+.button-login{
+    width: 200%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+input[type=submit] {
+    background-color:var(--descBackgroundColor);
+}
+
+input[type=submit]:hover {
+    background-color:#001D2D;
+    color: white;
+    transition: 0.8s;
+    border-color: #001D2D;
+}
+
+input[type=reset] {
+    background-color: #888888;
+    color: white;
+}
+
+input[type=reset]:hover {
+    background-color: #726b6b;
+    transition: 0.8s;
+    border-color: #726b6b;
+    color: white;
+}
+
+input[type=reset],
+input[type=submit] {
+    width: 45%;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 23px;
+    border: none;
+    margin-left: 30px;
+}
+
+.p-formulario a{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.p-formulario a:hover{
+    font-size: 25px;
+    color:rgb(97, 4, 97);
+    transition: 0.3s;
+}
+
+.p-formulario{
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 35%;
+}
+
+.p-formulario-login{
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 28%;
+}
+
+.p-formulario-login a{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.p-formulario-login a:hover{
+    font-size: 25px;
+    color:rgb(97, 4, 97);
+    transition: 0.3s;
+}

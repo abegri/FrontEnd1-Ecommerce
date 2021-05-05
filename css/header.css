@@ -1,0 +1,54 @@
+@import url("estilos.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    font-family: sans-serif;
+}
+
+
+.descuento{
+    background-color: var( --descBackgroundColor);
+    height: 23px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    background-color: var(--descBackgroundColor);
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+header{
+    background-color: var(--mainColor);
+    color: white;
+    top:0;
+    z-index: 1;
+    height: 80px;
+    position: sticky;
+    box-shadow: 0px 5px 3px #00000040;
+    padding: 0;
+}
+
+h1{
+    top: 27px;
+    left: 130px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    text-align: center;
+    padding-left: 15px;
+}
+
+
+.logo{
+    padding: 5px 20px 3px 15px; /*superior, derecha, abajo, izquierda*/
+    position: relative;
+}
+
+.logo:hover{
+    width: 10%;
+    transition: 0.3s;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadí a tu personaje</title>
+    <link rel= "stylesheet" href="../css/add.css">
+</head>
+
+<body>
+    <div class="descuento">20% de descuento en todos los productos!</div>
+    <header>
+        <a href="../">
+            <img class="logo" src="../img-figma/logo 1logo.svg">
+        </a> <h1> DC Tienda </h1>
+       
+    </header>
+    <main>
+        <section>
+        <div class="card-add"> 
+        <h3>¡Añadí tu super!</h3>
+        <p>Agregá tu personaje favorito completando las opciones</p>
+        <form action="../index.html" id="newForm" method="GET" >
+            <div class="div1"> 
+                <label for="nombre">*Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required >
+                
+                <label for="Fecha">Fecha</label>
+                <input type="date" id="Fecha" name="Fecha">
+                
+                <label for="Descripción"></label>
+                <textarea id="Descripción" placeholder="Descripción"></textarea>
+            </div>
+ 
+            <div class="div2">
+                <label for="Especie" id="list-especie">*Especie:</label>
+                <select name="Especie" id="Especie">
+                    <option value="Especie" selected="true" disabled="disabled" hidden id="especie">Especie</option>
+                    <option value="Unknown">Unknown</option>
+                    <option value="Cyborg">Cyborg</option>
+                    <option value="Extraterrestre">Extraterrestre</option>
+                    <option value="Humano">Humano</option>
+                    <option value="Kryptoniano">Kryptoniano</option>
+                    <option value="Murciélago">Murciélago</option>
+                    <option value="Otro">Otro</option> 
+                </select>
+
+                <label for="foto" id="foto">Agregar Foto</label>
+                <input type="file" id="foto" accept=".jpg, .pdf, .png" name="foto" multiple> 
+
+                <fieldset>
+                    <label for="poderes" id="titulo-fieldset">Poderes</label>
+                    <br>
+                    <input type="checkbox" id="poderes1" name="Poderes" value="HTML">
+                    <label for="poderes1" class="radio-check"> Volar</label>
+                    <br>
+                    <input type="checkbox" id="poderes2" name="Poderes" value="CSS">
+                    <label for="poderes2" class="radio-check"> SuperInteligencia</label>
+                    <br>
+                    <input type="checkbox" id="poderes3" name="Poderes" value="JS">
+                    <label for="poderes3" class="radio-check"> Vista de rayo láser</label>
+                    <br>
+                    <input type="checkbox" id="poderes4" name="Poderes" value="JS">
+                    <label for="poderes4" class="radio-check"> Billetera gorda</label>
+
+                </fieldset>
+
+                <hr>
+
+                <fieldset>
+                    <label for="tipoPersonaje" id="titulo-fieldset">Tipo de Personaje</label>
+                    
+                    <br>
+
+                    <input type="radio" id="personaje1" name="tipoPersonaje" value="Héroe/ Heroina">
+                    <label for="personaje1" class="radio-check"> Héroe/ Heroina </label>
+                    
+                    <br>
+
+                    <input type="radio" id="personaje2" name="tipoPersonaje" value="Villano/ Villana">
+                    <label for="personaje2" class="radio-check"> Villano/ Villana </label>
+                </fieldset>
+
+            </div>
+            
+            <input type="submit" value="Añadir">
+        
+        </form>
+    </div>
+</section>
+</main>
+
+<footer>
+    <p>Todos los derechos reservados a FRONT END 1</p>
+</footer>
+
+</body>
+
+</html>
